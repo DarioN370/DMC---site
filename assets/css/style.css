@@ -1,7 +1,110 @@
-    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root{
+    --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundaria: ;
+
+    --cor-fonte-principal: #fff;
+    --cor-fonte-secundaria: #000;
+    --cor-fonte-terciaria: ;
+
+    --peso-fonte-negrito: 700;
+    --peso-fonte-leve: 500;
+    --peso-fonte-normal: 600;
+    --peso-fonte-fofa: 400;
+}
+
+.cabecalho{
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-fonte-negrito);
+    display: flex;
+    background: var(--cor-fonte-secundaria);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.cabecalho a{
+    text-decoration: none;
+    color: var(--cor-fonte-principal);
+}
+
+.cabecalho li{
+    list-style: none;
+}
+
+.logo{
+    margin-left: 150px;
+}
+
+.menu{
+
+}
+
+.menu__itens{
+    margin-right: 150px;
+    display: flex;
+    gap: 50px;
+    padding: 25px;
+}
+
+.conteudo__primeiro{
+    font-family: var(--fonte-principal);
+    max-width: 1670px;
+    margin: 0 auto;
+    margin-top: 130px;
+    display: flex;
+    gap: 180px;
+}
+
+.conteudo__primeiro__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 27px;
+}
+
+.titulos{
+    font-size: 2.5rem;
+    font-weight: var(--peso-fonte-negrito);
+}
+
+.conteudos{
+    font-size: 2.5rem;
+    font-weight: var(--peso-fonte-fofa);
+}
+
+.conteudo__primeiro__botao{
+    display: flex;
+    gap: 204px;
+    justify-content: space-between;
+}
+
+.conteudo__primeiro__botao a{
+    text-decoration: none;
+}
+
+.conteudo__primeiro__botao p{
+    transition: 0.6s;
+}
+
+.conteudo__primeiro__botao p:hover{
+    background: rgba(0, 0, 0, 0.781);
+}
+
+.botao__padrao{
+    background: black;
+    font-weight: var(--peso-fonte-negrito);
+    color: var(--cor-fonte-principal);
+    font-size: 1.5rem;
+    padding: 30px;
+    text-align: center;
+    min-width: 325px;
+    border-radius: 20px;
 }
