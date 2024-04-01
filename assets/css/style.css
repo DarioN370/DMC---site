@@ -18,6 +18,13 @@
     --peso-fonte-leve: 500;
     --peso-fonte-normal: 600;
     --peso-fonte-fofa: 400;
+
+    --gradient: linear-gradient(
+        to right,
+        rgb(149 114 252 ),
+        rgb(67 231 173 ),
+        rgb(226 212 92 ),
+    )
 }
 
 .cabecalho{
@@ -30,8 +37,12 @@
     font-size: 1.25rem;
 }
 
-.cabecalho a{
+a{
     text-decoration: none;
+    
+}
+
+.cabecalho a{
     color: var(--cor-fonte-principal);
 }
 
@@ -87,7 +98,7 @@
 }
 
 .conteudo__primeiro__botao a{
-    text-decoration: none;
+    
 }
 
 .conteudo__primeiro__botao p{
