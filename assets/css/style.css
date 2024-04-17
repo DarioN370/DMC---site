@@ -150,6 +150,13 @@ main{
     margin-bottom: 100px;
 }
 
+.conteudo__terceiro__apresentacao{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 150px;
+    font-weight: var(--peso-fonte-normal);
+}
+
 .conteudo__terceiro__container{
     display: flex; 
     justify-content: space-around;
