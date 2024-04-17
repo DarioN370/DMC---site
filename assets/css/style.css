@@ -19,12 +19,7 @@
     --peso-fonte-normal: 600;
     --peso-fonte-fofa: 400;
 
-    --gradient: linear-gradient(
-        to right,
-        rgb(149 114 252 ),
-        rgb(67 231 173 ),
-        rgb(226 212 92 ),
-    )
+    --sombra: rgb(0, 0, 0) 0px 25px 20px -20px;
 }
 
 .cabecalho{
@@ -39,7 +34,6 @@
 
 a{
     text-decoration: none;
-    
 }
 
 .cabecalho a{
@@ -48,14 +42,15 @@ a{
 
 .cabecalho li{
     list-style: none;
+    transition: 0.5s;
+}
+
+.cabecalho li:hover{
+    color: rgba(255, 255, 255, 0.623);
 }
 
 .logo{
     margin-left: 150px;
-}
-
-.menu{
-
 }
 
 .menu__itens{
@@ -65,10 +60,13 @@ a{
     padding: 25px;
 }
 
-.conteudo__primeiro{
-    font-family: var(--fonte-principal);
+main{
     max-width: 1670px;
     margin: 0 auto;
+}
+
+.conteudo__primeiro{
+    font-family: var(--fonte-principal);
     margin-top: 130px;
     display: flex;
     gap: 180px;
@@ -97,16 +95,12 @@ a{
     justify-content: space-between;
 }
 
-.conteudo__primeiro__botao a{
-    
-}
-
 .conteudo__primeiro__botao p{
     transition: 0.6s;
 }
 
 .conteudo__primeiro__botao p:hover{
-    background: rgba(0, 0, 0, 0.781);
+    background: rgba(0, 0, 0, 0.863);
 }
 
 .botao__padrao{
@@ -118,4 +112,66 @@ a{
     text-align: center;
     min-width: 325px;
     border-radius: 20px;
+}
+
+.conteudo__segundo{
+    font-family: var(--fonte-principal);
+    margin-top: 300px;
+}
+
+.conteudo__segundo__container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.readme__projetos{
+    display: flex;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.readme{
+    box-shadow: var(--sombra)
+}
+
+.titulo__projetos{
+    font-size: 7rem;
+    line-height: 1;
+    text-transform: uppercase;  /*transforma o testo em maiusculo*/
+    word-break: break-all;  /* quebra de caractere*/
+    max-width: 3.5ch;   /* espaçamento entre os caractere*/
+    color: var(--cor-principal);  
+    font-weight: var(--peso-fonte-negrito);
+}
+
+.conteudo__terceiro{
+    font-family: var(--fonte-principal);
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
+.conteudo__terceiro__container{
+    display: flex; 
+    justify-content: space-around;
+}
+
+.formacoes{
+    display: flex;
+    gap: 60px;
+}
+
+.certificado{
+    box-shadow: var(--sombra);
+}
+
+.titulo__cursos{
+    display: flex;
+    align-items: center;
+    font-size: 7rem;
+    line-height: 1;
+    text-transform: uppercase;  /*transforma o testo em maiusculo*/
+    word-break: break-all;  /* quebra de caractere*/
+    max-width: 3.5ch;   /* espaçamento entre os caractere*/
+    color: var(--cor-principal);  
+    font-weight: var(--peso-fonte-negrito);
 }
