@@ -125,7 +125,9 @@ main{
 }
 
 .readme__projetos{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex: 1;
     gap: 60px;
     margin-bottom: 100px;
 }
@@ -181,4 +183,30 @@ main{
     max-width: 3.5ch;   /* espaçamento entre os caractere*/
     color: var(--cor-principal);  
     font-weight: var(--peso-fonte-negrito);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* inicio do responsivo */
+@media only screen and (max-width: 600px) {
+    .cabecalho{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo__primeiro{
+        width: 100%;
+        background-color: #000;
+    }
 }
