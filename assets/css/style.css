@@ -129,7 +129,6 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     flex: 1;
     gap: 60px;
-    margin-bottom: 100px;
 }
 
 .readme{
@@ -193,7 +192,9 @@ main{
 
 
 
-
+.titulo__cursos__mobile{
+    display: none;
+}
 
 .img__mobile{
     display: none;
@@ -201,13 +202,32 @@ main{
 
 /* inicio do responsivo */
 @media only screen and (max-width: 600px) {
+
+    /*------------section 1 + header-------------*/
     .cabecalho{
         padding: 0;
         margin: 0;
         max-width: 100vw;
         display: flex;
-        align-items: center;
+        align-items: start;
+        justify-content: space-between;
         flex-direction: column;
+    }
+
+    .logo{
+        padding-top: 20px;
+    }
+
+    .menu__itens{
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        gap: 20px;
+    }
+
+    .menu__itens a{
+        margin: 0;
+        padding: 0;
     }
 
     main{
@@ -219,6 +239,7 @@ main{
         max-width: 100vw;
         display: flex;
         flex-direction: column;
+        gap: 0px;
     }
 
     .conteudo__primeiro__container{
@@ -263,5 +284,64 @@ main{
         display: none;
     }
 
+    /*------------section 2-------------*/
 
+    .conteudo__segundo{
+        margin-top: 100px;
+    }
+
+    .conteudo__segundo__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo__projetos{
+        margin-bottom: 50px;
+        font-size: 4rem;
+        line-height: 1;
+        text-transform: uppercase;  /*transforma o testo em maiusculo*/
+        word-break: normal;  /* quebra de caractere*/
+        max-width: none;   /* espaçamento entre os caractere*/
+        color: var(--cor-principal);  
+        font-weight: var(--peso-fonte-negrito);
+    }
+
+    .readme__projetos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    /*------------section 3-------------*/
+
+    .conteudo__terceiro{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo__cursos__mobile{
+        display: flex;
+        font-size: 4rem;
+        text-transform: uppercase;  /*transforma o testo em maiusculo*/
+        color: var(--cor-principal);  
+        font-weight: var(--peso-fonte-negrito);
+    }
+
+    .titulo__cursos{
+        display: none;
+        margin: 0px 0px;
+    }
+
+    .formacoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo__terceiro__apresentacao{
+        margin: 0px 0px 50px 0px;
+    }
 }
