@@ -12,7 +12,8 @@
 
     --cor-fonte-principal: #fff;
     --cor-fonte-secundaria: #000;
-    --cor-fonte-terciaria: ;
+    --cor-fonte-terciaria: #86868B;
+    --cor-fonte-quarta: #2997FF;
 
     --peso-fonte-negrito: 700;
     --peso-fonte-leve: 500;
@@ -191,6 +192,45 @@ main{
     font-weight: var(--peso-fonte-negrito);
 }
 
+#conteudo__quarto{
+    margin-top: 300px;
+    font-family: var(--fonte-principal);
+}
+
+.conteudo__quarto__container{
+    max-width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    background: var(--cor-fonte-secundaria);
+    align-items: center;
+    justify-content: space-between;
+    gap: 250px;
+    padding: 100px;
+}
+
+.conteudo__quarto__container h1{
+    font-size: 20rem;
+    color: var(--cor-fonte-principal);
+    font-weight: var(--peso-fonte-fofa);
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.sobre__mim__conteudo{
+    color: var(--cor-fonte-terciaria);
+    font-size: 2rem;
+}
+
+.saiba__mais{
+    color: var(--cor-fonte-quarta);
+    font-size: 1.5rem;
+    text-align: end;
+    font-weight: var(--peso-fonte-normal);
+}
 
 
 
