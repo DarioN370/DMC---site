@@ -422,5 +422,16 @@ main{
     }
 
     /*-------------FOOTER-----------------*/
+
+
+    #rodape{
+        margin-top: 10px;
+    }
+
+    .rodape__container{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
     
 }
