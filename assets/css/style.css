@@ -232,14 +232,30 @@ main{
     font-weight: var(--peso-fonte-normal);
 }
 
+#rodape{
+    font-family: var(--fonte-principal);
+    margin-top: 100px;
+}
 
+.rodape__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
 
+.direitos__autorais{
+    font-size: 1.5rem;
+    font-weight: var(--peso-fonte-normal);
+}
 
+.logos{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
 
-
-
-
-
+/*remoção de elementos abaixo*/
 
 .titulo__cursos__mobile{
     display: none;
@@ -404,5 +420,7 @@ main{
     .sobre__mim__conteudo{
         font-size: 1.7rem;
     }
+
+    /*-------------FOOTER-----------------*/
     
 }
