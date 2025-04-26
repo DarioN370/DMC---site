@@ -30,14 +30,15 @@ html{
 .cabecalho{
     font-family: var(--fonte-principal);
     font-weight: var(--peso-fonte-negrito);
-    background: var(--cor-fonte-secundaria);
+    background: var(--cor-fonte-principal);
     font-size: 1.25rem;
 }
 
-nav{
+.cabecalho nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+
 }
 
 a{
@@ -51,14 +52,15 @@ a{
 .cabecalho li{
     list-style: none;
     transition: 0.5s;
+    color: var(--cor-fonte-secundaria);
 }
 
 .cabecalho li:hover{
     color: rgba(255, 255, 255, 0.623);
 }
 
-.logo{
-    margin-left: 150px;
+.logo img{ 
+    width: 10rem;
 }
 
 .menu__itens{
@@ -77,10 +79,14 @@ main{
     font-family: var(--fonte-principal);
     margin-top: 130px;
     display: flex;
-    gap: 180px;
+    gap: 10rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .conteudo__primeiro__container{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,6 +107,12 @@ main{
     display: flex;
     gap: 204px;
     justify-content: space-between;
+}
+
+.img__desk{
+    margin: 0;
+    padding: 0;
+    width: 30rem;
 }
 
 .conteudo__primeiro__botao p{
