@@ -37,7 +37,7 @@ html{
 .cabecalho nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -76,11 +76,12 @@ main{
 }
 
 #conteudo__primeiro{
+    padding: 2rem;
     font-family: var(--fonte-principal);
     margin-top: 130px;
     display: flex;
     gap: 10rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -112,7 +113,7 @@ main{
 .img__desk{
     margin: 0;
     padding: 0;
-    width: 30rem;
+    width: 28rem;
 }
 
 .conteudo__primeiro__botao p{
